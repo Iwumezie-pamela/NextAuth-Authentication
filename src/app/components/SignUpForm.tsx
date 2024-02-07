@@ -77,6 +77,7 @@ const SignUpForm = () => {
     try {
       const result = await registerUser(user);
       toast.success('The User Registered Successfully');
+      reset();
     } catch (error) {
       toast.error('Something Went Wrong');
       console.error(error);
